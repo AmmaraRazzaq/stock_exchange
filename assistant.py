@@ -4,8 +4,8 @@ from io import BytesIO
 from PIL import Image
 from openai import OpenAI
 
-API_Key = st.secrets["sk-proj-9HFr86mSr3umkWtNNkVHT3BlbkFJjvt6xmESlrbFIsTLh5U3"]
-client = OpenAI(api_key=API_Key)
+api_key = st.secrets["OPENAI_API_KEY"]
+client = OpenAI(api_key=api_key)
 ASSISTANT_ID = "asst_OMhIPr3WGKc4rkbdo71frQba"
 
 query = st.text_input("Type your query?")
