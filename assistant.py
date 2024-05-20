@@ -3,7 +3,9 @@ import streamlit as st
 from io import BytesIO
 from PIL import Image
 from openai import OpenAI
-client = OpenAI(api_key="sk-proj-9HFr86mSr3umkWtNNkVHT3BlbkFJjvt6xmESlrbFIsTLh5U3")
+
+API_Key = st.secrets["sk-proj-9HFr86mSr3umkWtNNkVHT3BlbkFJjvt6xmESlrbFIsTLh5U3"]
+client = OpenAI(api_key=API_Key)
 ASSISTANT_ID = "asst_OMhIPr3WGKc4rkbdo71frQba"
 
 query = st.text_input("Type your query?")
