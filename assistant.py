@@ -6,7 +6,7 @@ from openai import OpenAI
 
 api_key = st.secrets["OPENAI_API_KEY"]
 client = OpenAI(api_key=api_key)
-ASSISTANT_ID = "asst_OMhIPr3WGKc4rkbdo71frQba"
+ASSISTANT_ID = "asst_ggEg4jP2WShrMmELnL0jE2t6"
 
 query = st.text_input("Type your query?")
 # query = "Give me the complete historic trend of Saudi Arabia Refineries Co."
